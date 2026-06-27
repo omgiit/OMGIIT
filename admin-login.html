@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Login | OMM GANAPATI INSTITUTE OF INFORMATION & TECHNOLOGY</title>
+
+<link rel="stylesheet" href="../css/admin.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1d4ed8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-container{
+    width:400px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.logo img{
+    width:90px;
+}
+
+.logo h2{
+    color:#003366;
+    margin-top:10px;
+}
+
+.logo p{
+    color:#666;
+    font-size:14px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.input-group input:focus{
+    border-color:#0056b3;
+    outline:none;
+}
+
+.login-btn{
+    width:100%;
+    padding:12px;
+    background:#003366;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-btn:hover{
+    background:#0056b3;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    font-size:14px;
+}
+
+.footer a{
+    color:#003366;
+    text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<div class="logo">
+
+<img src="omgiit.png" alt="Institute Logo">
+
+<h2>Omm Ganapati Institute of Information & Technology</h2>
+
+<h3>Admin Login</h3>
+
+</div>
+
+<form action="login.php" method="POST">
+
+<div class="input-group">
+
+<label>Username</label>
+
+<input
+type="text"
+name="username"
+placeholder="Enter Username"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Password</label>
+
+<input
+type="password"
+name="password"
+placeholder="Enter Password"
+required>
+
+</div>
+
+<button type="submit" class="login-btn">
+
+🔐 Login
+
+</button>
+
+</form>
+
+<div class="footer">
+
+<p>
+<a href="index.html">← Back to Home</a>
+</p>
+
+<p style="margin-top:10px;">
+© 2026 OMM GANAPATI INSTITUTE OF INFORMATION & TECHNOLOGY
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

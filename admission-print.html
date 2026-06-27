@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admission Print Preview</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f2f2f2;
+padding:20px;
+}
+
+.print-area{
+max-width:900px;
+margin:auto;
+background:#fff;
+padding:30px;
+border:2px solid #003366;
+}
+
+.header{
+display:flex;
+align-items:center;
+border-bottom:3px solid #003366;
+padding-bottom:15px;
+margin-bottom:20px;
+}
+
+.logo{
+width:90px;
+margin-right:20px;
+}
+
+.title h1{
+color:#003366;
+font-size:28px;
+}
+
+.title h3{
+color:#555;
+font-weight:normal;
+}
+
+.receipt{
+text-align:center;
+margin:20px 0;
+font-size:24px;
+font-weight:bold;
+color:#d32f2f;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table td{
+border:1px solid #999;
+padding:12px;
+}
+
+.label{
+font-weight:bold;
+background:#f7f7f7;
+width:30%;
+}
+
+.photo{
+width:130px;
+height:150px;
+border:2px solid #999;
+text-align:center;
+vertical-align:middle;
+font-weight:bold;
+}
+
+.footer{
+margin-top:40px;
+display:flex;
+justify-content:space-between;
+}
+
+.signature{
+text-align:center;
+width:220px;
+}
+
+.btns{
+text-align:center;
+margin-top:30px;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+background:#003366;
+color:#fff;
+border:none;
+cursor:pointer;
+margin:10px;
+border-radius:5px;
+}
+
+button:hover{
+background:#ff9800;
+}
+
+@media print{
+
+button{
+display:none;
+}
+
+body{
+background:white;
+padding:0;
+}
+
+.print-area{
+border:none;
+width:100%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="print-area">
+
+<div class="header">
+
+<img src="omgiit.png" class="logo">
+
+<div class="title">
+
+<h1>OMM GANAPATI INSTITUTE OF INFORMATION & TECHNOLOGY</h1>
+
+<h3>NH57, Mathura Chwak, Boudh</h3>
+
+<p>WhatsApp: 6371320268 | Email: omgiit.edu@gmail.com</p>
+
+</div>
+
+</div>
+
+<div class="receipt">
+
+ADMISSION APPLICATION RECEIPT
+
+</div>
+
+<table>
+
+<tr>
+
+<td class="label">Application No.</td>
+
+<td>OMGIIT20260001</td>
+
+<td rowspan="5" class="photo">
+
+Student Photo
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Admission Date</td>
+
+<td>26-06-2026</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Student Name</td>
+
+<td id="studentName">Rahul Kumar</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Father's Name</td>
+
+<td id="fatherName">Ramesh Kumar</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Mother's Name</td>
+
+<td id="motherName">Sita Devi</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Gender</td>
+
+<td colspan="2">Male</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Date of Birth</td>
+
+<td colspan="2">10-05-2008</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Mobile</td>
+
+<td colspan="2">9876543210</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Email</td>
+
+<td colspan="2">student@email.com</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Course</td>
+
+<td colspan="2">OS-CIT A (6 Months)</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Qualification</td>
+
+<td colspan="2">10th Pass</td>
+
+</tr>
+
+<tr>
+
+<td class="label">Address</td>
+
+<td colspan="2">
+
+Mathura Chwak, Boudh, Odisha
+
+</td>
+
+</tr>
+
+</table>
+
+<div class="footer">
+
+<div class="signature">
+
+_____________________
+
+<br>
+
+Student Signature
+
+</div>
+
+<div class="signature">
+
+_____________________
+
+<br>
+
+Authorized Signature
+
+</div>
+
+</div>
+
+<div class="btns">
+
+<button onclick="window.print()">
+
+🖨 Print Admission Form
+
+</button>
+
+<button onclick="history.back()">
+
+⬅ Back
+
+</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
